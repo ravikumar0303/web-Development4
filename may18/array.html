@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>array</title>
+
+    <script>
+      let arr = [];
+      class Produst {
+        constructor(pname, pcost) {
+          this.Produstname = pname;
+          this.productcost = pcost;
+        }
+      }
+
+      arr.push("mobile", 10000);
+      arr.push("namkeen", 400);
+
+      function f1() {
+        let x = document.getElementById("i1").value;
+        let y = document.getElementById("i2").value;
+
+        arr.push(x, y);
+        document.getElementById("p1").innerHTML = arr;
+      }
+    </script>
+  </head>
+  <body>
+    <from>
+      product:<input type="text" id="i1" /> <br /><br />
+      cost:<input type="number" id="i2" /> <br /><br />
+      <button onclick="f1()">showData</button>
+    </from>
+
+    <p id="p1"></p>
+  </body>
+</html>

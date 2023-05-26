@@ -1,0 +1,15 @@
+.containor
+{
+     background-color:rgb(143, 188, 160); 
+    /* background: url("pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+     border: 1px;
+    border-style: solid; 
+    text-align: center;
+     /* margin:100px;  */
+    /* padding-right: 50px;
+      padding-left: 100px;
+     border-right-color: rgb(0, 255, 85);
+    border-left-color: rgb(80, 248, 14); */
+}

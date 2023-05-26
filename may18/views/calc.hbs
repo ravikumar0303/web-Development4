@@ -1,0 +1,79 @@
+
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(()=>{
+       
+    
+        $("#r1").click(()=>{
+            let n1 = $("#num1").val()
+           // let obj ={num1:n}
+             let n2 = $("#num2").val()
+              let obj ={num1:n1 ,num2:n2}
+          // let obj = parseInt(num1) + parseInt(num2);
+            $.ajax(
+                {
+                    url:'calc',
+                    type:'POST',
+                    data: JSON.stringify(obj),
+                    success : function(respdata)
+                    {
+                        $("#p1").html(`${respdata.mul} ${respdata.sum}`)
+                    },
+                    beforeSend:function(request)
+                    {
+                        request.setRequestHeader('Content-Type', 'application/json')
+                    }
+                }
+            )
+        })
+
+
+
+     /*    $("#r1").click(()=>{
+            let n = $("#num1").val()
+            let obj ={num1:n}
+            $.ajax(
+                {
+                    url:'square',
+                    type:'POST',
+                    data: JSON.stringify(obj),
+                    success : function(respdata)
+                    {
+                        $("#p1").html(`${respdata.sqr}`)
+                    },
+                    beforeSend:function(request)
+                    {
+                        request.setRequestHeader('Content-Type', 'application/json')
+                    }
+                }
+            )
+        */
+
+
+     
+    })
+    
+
+  </script>
+<body>
+     <input type="number" id="num1" >
+      <input type="number" id="num2" >
+        <input type="button" id="r1" value="sum" /> -
+       <input type="button" id="r1" value="mul" /> 
+       {{!-- <input type="button" id="r1" value="div"/> --}}
+     
+    {{!-- <select >
+
+         <option>select</option>>
+         {{!-- <option value="sum" >sum</option>  --}}
+         <option  type ="button" id="r1" onclick="mul" value="mul">mul</option>
+         </select>  --}}
+
+             <p id="p1"></p>      
+     
+
+</body>
+
+</html>

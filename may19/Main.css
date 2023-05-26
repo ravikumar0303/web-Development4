@@ -1,0 +1,19 @@
+.Main{
+    display :auto;
+    grid-template-columns: auto; 
+    
+}
+.ShoppingMain{
+    margin:auto;
+    background-color: aqua;
+    width:fit-content;
+    padding: auto;
+    padding: 10dvb;
+    border:2px solid black;
+    
+}
+.ProductDesc{
+    background: url("../may17/pic2.jpg"); 
+    width: 100%;
+    border:2px solid black;
+}

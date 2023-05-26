@@ -1,0 +1,16 @@
+.containar
+{
+      /* background-color:rosybrown; */
+     /* background: url("../may17/pic.jpg"); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+      /* display: flex; */
+      align-items: center;
+      border-style: solid;
+      text-align: center;
+     margin:100px; 
+     border: 2px;
+     /* padding-right: 50px; */
+    /* border-right-color: rgb(0, 255, 85); */
+    /* border-left-color: rgb(80, 248, 14); */
+}
